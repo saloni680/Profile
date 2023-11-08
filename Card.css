@@ -1,0 +1,124 @@
+/* section{
+    height: 500px;
+    width: 400px;
+    background-color: grey;
+    border-radius: 40px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_1280.jpg');
+    background-size:cover; 
+	background-position:center; 
+	background-repeat:no-repeat; 
+}
+
+section:hover{
+    .detail{
+        display: block;
+    }
+}
+.detail{
+    height: 200px;
+    width: 400px;
+    background-color: blue;
+    display: none;
+    border-radius: 40px;
+    position: fixed;
+    margin-top: -50px;
+    opacity: 1;
+}
+.icons{ 
+    font-size: 30px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 450px;
+}
+.icons i {
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+i:hover{
+    background-color: aqua;
+    transform: rotateY(340deg);
+    opacity: 1;
+    transition: 1s;
+}
+section:hover{
+    transform: translateY(-20%);
+    transition: .9s;
+
+}
+ */
+ body{
+    background-color: rgb(235, 226, 226);
+ }
+ section {
+    height: 550px;
+    width: 350px;
+    background: white;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    border-radius: 20px;
+}
+section:hover{
+    .icons{
+        display: flex;
+    }
+    .detail{
+        opacity: 1;
+    }
+    img{
+        height: 500px;
+    }
+}
+
+img {
+    height:550px;
+    width: 350px;
+    border-radius: 20px;
+}
+img:hover{
+    transform:  translateY(-20%) ;
+    transition: .9s;
+
+}
+.icons{ 
+    font-size: 30px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: -180px;
+    margin-left: 30px;
+    position: fixed;
+    display: none;
+}
+.icons i {
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+i:hover{
+    background-color: aqua;
+    transform: rotateY(340deg);
+    opacity: 1;
+    transition: 1s;
+    background-color: black;
+    color: white;
+}
+
+.detail{
+    opacity: 0;
+    margin-top:-120px;
+    text-overflow: hidden;
+}
